@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @affair.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @affair.location %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @affair.website %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @affair.date %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @affair.description %>
+</p>
+
+<%= link_to 'Edit', edit_affair_path(@affair) %> |
+<%= link_to 'Back', affairs_path %>

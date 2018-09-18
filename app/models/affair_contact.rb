@@ -1,0 +1,2 @@
+class AffairContact < ApplicationRecord
+end
