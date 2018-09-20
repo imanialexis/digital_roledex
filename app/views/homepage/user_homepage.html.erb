@@ -1,3 +1,17 @@
-<h1>Welcome, <%=current_user.fname%> </h1>
+<div> <%= link_to 'Log out' , destroy_user_session_path, method: :delete %> </div>
+<br>
+<div id ='user_info_container'>
+    <div><img src = "<%=current_user.avatar %>" height =200 width=200></div>
+    <div>
+        <p><%= current_user.fname %> <%= current_user.lname %></p>
+        <p><%= current_user.location%></p>
+        <p><%= current_user.email%></p>
+        <a href ='#'>Edit Profile</a>
+    </div>
+    
+</div>
 
-<%= link_to 'Sign out' , destroy_user_session_path, method: :delete %>
+<div id ='events_contacts_container'>
+    <div id ='contacts-box'> Contacts</div>
+    <div id ='events-box'>Events</div>
+</div>

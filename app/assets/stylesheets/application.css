@@ -14,3 +14,33 @@
  /* *= require_self */
  /* */ 
  @import "bootstrap";
+
+
+ /* ***************** USER HOMEPAGE STYLING ********************** */
+
+ #contacts-box {
+    background-color: green;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+#events-box {
+    background-color: blue;
+    width: 300px;
+    border: 25px solid blue;
+    padding: 25px;
+    margin: 25px;
+}
+
+#events_contacts_container {
+    display: flex;
+    justify-content: center;
+
+}
+
+#user_info_container {
+    display: flex;
+    justify-content: center;
+}
