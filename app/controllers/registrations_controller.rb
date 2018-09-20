@@ -1,5 +1,11 @@
 class RegistrationsController < Devise::RegistrationsController
 
+  def after_sign_in_path_for(resource)
+    # flash[:notice] = "Account succesfully updated"
+    # profile_path
+    redirect_to '/profile'
+end
+    
     private
 
     def sign_up_params

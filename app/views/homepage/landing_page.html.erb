@@ -1,0 +1,10 @@
+<h1>K.I.T <i>the digital roledex </i></h1>
+
+<p>Keep in touch with the people you meet!</p>
+    
+    <% if current_user %>
+        <%= link_to 'Sign out' , destroy_user_session_path, method: :delete %>
+    <% else %>
+        <a href="/users/sign_in" class="nav-link">Log In</a>
+        <a href="/users/sign_up" class="nav-link">Sign Up</a>
+<% end %>
