@@ -5,7 +5,9 @@ class CreateContacts < ActiveRecord::Migration[5.2]
       t.string :lname
       t.string :email
       t.string :title
+      t.string :pro_designation
       t.string :company
+      t.string :location
       t.string :phone
       t.string :website
       t.string :linked_in
