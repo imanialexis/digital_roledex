@@ -1,0 +1,29 @@
+<div> <%= link_to 'Log out' , destroy_user_session_path, method: :delete %> </div>
+<br>
+<div id ='user_info_container'>
+    <div><img src = "<%= current_user.avatar %>" height =200 width=200></div>
+    <div>
+        <p><%= current_user.fname %> <%= current_user.lname %></p>
+        <p><%= current_user.location%></p>
+        <p><%= current_user.email%></p>
+        <p><%= link_to "Edit Profile", edit_user_registration_path %></p>
+   
+    </div>
+    
+</div>
+
+<div id ='events_contacts_container'>
+    <div id ='contacts-box'>
+        <p>Contacts</p> 
+    </div>
+
+    
+    <div id ='events-box'>
+        <p>Events</p>
+    </div>
+</div>
+
+<div id ='button-container'>
+    <a href ="/contacts/new" <button type="button" class="btn btn-outline-primary">Quick Add</a></button>
+    <a href ="/affairs/new" <button type="button" class="btn btn-outline-secondary">Quick Add</a></button>
+</div>

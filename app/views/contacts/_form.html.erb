@@ -12,42 +12,57 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :fname %>
+    <%= form.label 'First Name' %>
     <%= form.text_field :fname %>
   </div>
 
   <div class="field">
-    <%= form.label :lname %>
+    <%= form.label 'Last Name' %>
     <%= form.text_field :lname %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
+    <%= form.label 'Email' %>
     <%= form.text_field :email %>
   </div>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label 'Title' %>
     <%= form.text_field :title %>
+  </div>
+  
+  <div class="field">
+    <%= form.label 'Professional Designation' %>
+    <%= form.text_field :pro_designation , placeholder: 'i.e. MBA,PMP,Esq' %>
+  </div>
+
+<div class="field">
+    <%= form.label 'Company' %>
+    <%= form.text_field :company %>
   </div>
 
   <div class="field">
-    <%= form.label :phone %>
+    <%= form.label 'Location' %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Phone Number' %>
     <%= form.text_field :phone %>
   </div>
 
   <div class="field">
-    <%= form.label :website %>
+    <%= form.label 'Website' %>
     <%= form.text_field :website %>
   </div>
 
   <div class="field">
-    <%= form.label :linked_in %>
+    <%= form.label 'LinkedIn' %>
     <%= form.text_field :linked_in %>
   </div>
 
   <div class="field">
-    <%= form.label :facebook %>
+    <%= form.label 'Facebook' %>
     <%= form.text_field :facebook %>
   </div>
 
@@ -57,28 +72,24 @@
   </div>
 
   <div class="field">
-    <%= form.label :other_social %>
+    <%= form.label 'Other Social' %>
     <%= form.text_field :other_social %>
   </div>
 
+
   <div class="field">
-    <%= form.label :highlights %>
-    <%= form.text_field :highlights %>
+    <%= form.label 'Notes' %>
+    <%= form.text_area :notes %>
   </div>
 
   <div class="field">
-    <%= form.label :notes %>
-    <%= form.text_field :notes %>
-  </div>
-
-  <div class="field">
-    <%= form.label :avatar %>
+    <%= form.label "Picture" %>
     <%= form.text_field :avatar %>
   </div>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
+    <%= form.label '** DO NOT UPDATE **' %>
+    <%= form.number_field :user_id , value: current_user.id %>
   </div>
 
   <div class="actions">

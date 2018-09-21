@@ -10,6 +10,9 @@ class AffairsController < ApplicationController
   # GET /affairs/1
   # GET /affairs/1.json
   def show
+    # @events = Affair.all
+    # @cohort = Cohort.find(params[:id]) //
+    @events = Affair.all
   end
 
   # GET /affairs/new

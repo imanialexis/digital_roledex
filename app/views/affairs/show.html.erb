@@ -12,7 +12,7 @@
 
 <p>
   <strong>Website:</strong>
-  <%= @affair.website %>
+  <a href ='<%= @affair.website %>'> <%=@affair.website%> </a>
 </p>
 
 <p>
@@ -25,5 +25,18 @@
   <%= @affair.description %>
 </p>
 
+
+
 <%= link_to 'Edit', edit_affair_path(@affair) %> |
 <%= link_to 'Back', affairs_path %>
+
+
+<br>
+<br>
+Contacts Made :
+
+<% @events.each do | event | %>
+
+<%= event.name %>
+
+<% end %>
