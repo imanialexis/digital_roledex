@@ -5,6 +5,14 @@ class RegistrationsController < Devise::RegistrationsController
     # profile_path
     redirect_to '/profile'
 end
+
+protected
+
+def after_update_path_for(resource)
+  # user_path(resource)
+  redirect_to '/profile'
+
+end
     
     private
 

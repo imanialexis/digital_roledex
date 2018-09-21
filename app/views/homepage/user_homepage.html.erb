@@ -6,7 +6,8 @@
         <p><%= current_user.fname %> <%= current_user.lname %></p>
         <p><%= current_user.location%></p>
         <p><%= current_user.email%></p>
-        <a href ='#'>Edit Profile</a>
+        <p><%= link_to "Edit Profile", edit_user_registration_path %></p>
+   
     </div>
     
 </div>
