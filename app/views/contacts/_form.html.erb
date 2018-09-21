@@ -30,6 +30,21 @@
     <%= form.label 'Title' %>
     <%= form.text_field :title %>
   </div>
+  
+  <div class="field">
+    <%= form.label 'Professional Designation' %>
+    <%= form.text_field :pro_designation , placeholder: 'i.e. MBA,PMP,Esq' %>
+  </div>
+
+<div class="field">
+    <%= form.label 'Company' %>
+    <%= form.text_field :company %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Location' %>
+    <%= form.text_field :location %>
+  </div>
 
   <div class="field">
     <%= form.label 'Phone Number' %>
@@ -61,10 +76,6 @@
     <%= form.text_field :other_social %>
   </div>
 
-  <div class="field">
-    <%= form.label 'Highlights' %>
-    <%= form.text_area :highlights %>
-  </div>
 
   <div class="field">
     <%= form.label 'Notes' %>

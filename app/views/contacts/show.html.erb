@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Fname:</strong>
+  <strong>First Name:</strong>
   <%= @contact.fname %>
 </p>
 
 <p>
-  <strong>Lname:</strong>
+  <strong>Last Name:</strong>
   <%= @contact.lname %>
 </p>
 
@@ -18,6 +18,21 @@
 <p>
   <strong>Title:</strong>
   <%= @contact.title %>
+</p>
+
+<p>
+  <strong>Profesional Designation:</strong>
+  <%= @contact.pro_designation %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @contact.company %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @contact.location %>
 </p>
 
 <p>
@@ -46,14 +61,10 @@
 </p>
 
 <p>
-  <strong>Other social:</strong>
+  <strong>Other Social:</strong>
   <%= @contact.other_social %>
 </p>
 
-<p>
-  <strong>Highlights:</strong>
-  <%= @contact.highlights %>
-</p>
 
 <p>
   <strong>Notes:</strong>
@@ -61,13 +72,13 @@
 </p>
 
 <p>
-  <strong>Avatar:</strong>
+  <strong>Picture:</strong>
   <%= @contact.avatar %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @contact.user_id %>
+  <strong>Created by:</strong>
+  <%= current_user.fname %> <%= current_user.lname %>
 </p>
 
 <%= link_to 'Edit', edit_contact_path(@contact) %> |
