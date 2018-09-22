@@ -25,6 +25,7 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(contact_params)
+    @contact_event = AffairsContacts.new(contact_id: @contact.id, affair_id: params[:affair_id])
 
     respond_to do |format|
       if @contact.save
@@ -71,4 +72,5 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(:fname, :lname, :email, :title, :phone, :website, :linked_in, :facebook, :twitter, :other_social, :highlights, :notes, :avatar, :user_id)
     end
+
 end

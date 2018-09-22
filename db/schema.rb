@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2018_09_19_150813) do
 
   create_table "affair_contacts", force: :cascade do |t|
     t.integer "contact_id"
-    t.integer "event_id"
+    t.integer "affair_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2018_09_19_150813) do
     t.string "website"
     t.date "date"
     t.text "description"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

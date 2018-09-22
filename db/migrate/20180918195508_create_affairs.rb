@@ -6,6 +6,7 @@ class CreateAffairs < ActiveRecord::Migration[5.2]
       t.string :website
       t.date :date
       t.text :description
+      t.integer :user_id
 
       t.timestamps
     end
