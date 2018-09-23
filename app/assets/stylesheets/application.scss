@@ -51,4 +51,27 @@
     display: flex;
     justify-content: space-evenly;
 }
+ 
 
+
+// ****************** NAV BAR *********************
+
+                
+// .view {
+//     background: url("/assets/background.jpg")no-repeat center center;
+// }
+// <img src="..." class="img-fluid" alt="Responsive image">
+
+.navbar {
+    background-color: rgba(0,0,255,0.3);
+}
+
+.top-nav-collapse {
+    background-color: rgba(0,0,255,0.3);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color:rgba(0,0,255,0.3);
+    }
+}
