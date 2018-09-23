@@ -11,94 +11,116 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label 'First Name' %>
-    <%= form.text_field :fname %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Last Name' %>
-    <%= form.text_field :lname %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Email' %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Title' %>
-    <%= form.text_field :title %>
-  </div>
-  
-  <div class="field">
-    <%= form.label 'Professional Designation' %>
-    <%= form.text_field :pro_designation , placeholder: 'i.e. MBA,PMP,Esq' %>
-  </div>
-
-<div class="field">
-    <%= form.label 'Company' %>
-    <%= form.text_field :company %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Location' %>
-    <%= form.text_field :location %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Phone Number' %>
-    <%= form.text_field :phone %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Website' %>
-    <%= form.text_field :website %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'LinkedIn' %>
-    <%= form.text_field :linked_in %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Facebook' %>
-    <%= form.text_field :facebook %>
-  </div>
-
-  <div class="field">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
-  </div>
-
-  <div class="field">
-    <%= form.label 'Other Social' %>
-    <%= form.text_field :other_social %>
-  </div>
-
-
-  <div class="field">
-    <%= form.label 'Notes' %>
-    <%= form.text_area :notes %>
-  </div>
-
-  <div class="field">
-    <%= form.label "Picture" %>
-    <%= form.text_field :avatar %>
-  </div>
-
- <div class="form-group">
-        <% form.label 'Event' %> 
-        <%= collection_select(:student, :affair_id, Affair.all, :id, :name) %>     
+ <div class = 'container '>
+    <div class="form-row field form-group col-sm-12"><h1>New Contact</h1></div>
+    
+    <div class="form-row field form-group col-sm-12">
+      <div class="form-group col-md-6">
+          <%= form.label 'First Name' %>
+        <%= form.text_field :fname , class: 'form-control form-control-sm' %>
+      </div>
+      <div class="form-group col-md-6">
+        <%= form.label 'Last Name' %>
+        <%= form.text_field :lname, class: 'form-control form-control-sm' %>
+      </div>
     </div>
 
 
-  <div class="field">
-    <%= form.label '** DO NOT UPDATE **' %>
-    <%= form.number_field :user_id , value: current_user.id %>
+    <div class="form-row field form-group col-sm-12">
+        <div class="form-group col-md-6">
+        <%= form.label 'Email' %>
+        <%= form.text_field :email , class: 'form-control form-control-sm' %>
+      </div>
+
+      <div class="form-group col-md-6">
+        <%= form.label 'Company' %>
+        <%= form.text_field :company , class: 'form-control form-control-sm' %>
+      </div>
+    </div>
+
+    <div class="form-row field form-group col-sm-12">
+      <div class="form-group col-md-6">
+        <%= form.label 'Title' %>
+        <%= form.text_field :title , class: 'form-control form-control-sm' %>
+      </div>
+    
+      <div class="form-group col-md-6">
+        <%= form.label 'Professional Designation' %>
+        <%= form.text_field :pro_designation , placeholder: 'i.e. MBA,PMP,Esq' , class: 'form-control form-control-sm' %>
+      </div>
+    </div>
+  
+
+    <div class="form-row field form-group col-sm-12">
+      <div class="form-group col-md-6">
+        <%= form.label 'Location' %>
+        <%= form.text_field :location , class: 'form-control form-control-sm' %>
+      </div>
+
+      <div class="form-group col-md-6">
+        <%= form.label 'Phone Number' %>
+        <%= form.text_field :phone , class: 'form-control form-control-sm' %>
+      </div>
+    </div>
+
+
+
+    <div class="form-row field form-group col-sm-12">
+      <div class="form-group col-md-6">
+        <%= form.label 'Website' %>
+        <%= form.text_field :website , class: 'form-control form-control-sm' %>
+      </div>
+
+      <div class="form-group col-md-6">
+        <%= form.label 'LinkedIn' %>
+        <%= form.text_field :linked_in , class: 'form-control form-control-sm' %>
+      </div>
+    </div>
+
+    <div class="form-row field form-group col-sm-12">
+      <div class="form-group col-md-6">
+      <%= form.label 'Facebook' %>
+      <%= form.text_field :facebook  , class: 'form-control form-control-sm'%>
+    </div>
+
+    <div class="form-group col-md-6">
+      <%= form.label :twitter %>
+      <%= form.text_field :twitter  , class: 'form-control form-control-sm'%>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+    <div class="form-row field form-group col-sm-12">
+      <div class="form-group col-md-6">
+      <%= form.label 'Other Social' %>
+      <%= form.text_field :other_social  , class: 'form-control form-control-sm'%>
+    </div>
+
+
+    <div class="form-group col-md-6">
+      <%= form.label "Picture" %>
+      <%= form.text_field :avatar  , class: 'form-control form-control-sm'%>
+    </div>
+   </div>
+
+
+   <div class="field field form-group col-md-12">
+      <%= form.label 'Notes' %>
+      <%= form.text_area :notes  , class: 'form-control form-control-lg',:cols => 10, :rows => 5 %>
+    </div>
+
+  <div class="form-group field form-group col-sm-4">
+          <% form.label 'Event' %> 
+            
+      </div>
+  <%# update this to have a dropdown of events to choose from that current_user created%>
+
+<%# HIDDEN FIELD AUTO POPULATED WITH CURRENT USER'S ID SO WE KNOW THIS CONTACT BELONGS TO THIS USER%>
+    <div class="field">
+      <%= form.hidden_field :user_id , value: current_user.id %>
+    </div>
+
+    <div class="field form-group col-sm-6 ">
+      <%= form.submit class: "btn btn-outline-primary"%>
+    </div>
+  <% end %>
+</div>
