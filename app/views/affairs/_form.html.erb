@@ -11,32 +11,39 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+<div class = 'container '>
+    <div class="field form-group col-sm-6 ">
+      <%= form.label "Name" %>
+      <%= form.text_field :name , class: 'form-control form-control-lg' , placeholder: 'ex. React.js Conference'%>
+    </div>
 
-  <div class="field">
-    <%= form.label :location %>
-    <%= form.text_field :location %>
-  </div>
+    
+    <div class="field form-group col-sm-6">
+      <%= form.label 'Location' %>
+      <%= form.text_field :location , class: 'form-control form-control-lg' , placeholder: 'ex. Boston,MS'%>
+    </div>
 
-  <div class="field">
-    <%= form.label :website %>
-    <%= form.text_field :website %>
-  </div>
+    <div class="field form-group col-sm-6">
+      <%= form.label 'Website' %>
+      <%= form.text_field :website ,class: 'form-control form-control-lg' , placeholder: 'ex. https://reactjs.org/' %>
+    </div>
 
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.date_select :date %>
-  </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+
+    <div class="field form-group col-sm-6">
+      <%= form.label 'Date' %> 
+      
+      <%= form.date_select :date  %>
+    </div>
+
+    <div class="field form-group col-sm-6 ">
+      <%= form.label 'Description' %>
+      <%= form.text_area :description,   class: 'form-control form-control-lg',:cols => 10, :rows => 5 %>
+    </div>
+
+    <div class="field form-group col-sm-6 row justify-content-center">
+      <%= form.submit class: "btn btn-outline-primary" %>
+    </div>
+  <% end %>
+</div>

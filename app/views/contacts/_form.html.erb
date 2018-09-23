@@ -89,16 +89,16 @@
 
  <div class="form-group">
         <% form.label 'Event' %> 
-        <%= collection_select(:student, :affair_id, Affair.all, :id, :name) %>     
+          
     </div>
-
+<%# update this to have a dropdown of events to choose from that current_user created%>
 
   <div class="field">
-    <%= form.label '** DO NOT UPDATE **' %>
-    <%= form.number_field :user_id , value: current_user.id %>
+  
+    <%= form.hidden_field :user_id , value: current_user.id %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-outline-primary"%>
   </div>
 <% end %>
