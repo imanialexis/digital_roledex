@@ -28,12 +28,7 @@ class ContactsController < ApplicationController
    puts ' IM IN THE CREATE METHOD '
     contact = Contact.new(contact_params)
     contact.save
-    puts "THIS IS THE CONTACT ID"
-    puts contact.id
-    puts "THIS IS THE CONTACT ID"
-    puts "THIS IS THE AFFAIR ID"
-    puts params[:affair][:affair_id]
-    puts "THIS IS THE AFFAIR ID"
+
     contact_event = AffairContact.new(contact_id: contact.id, affair_id: params[:affair][:affair_id])
     contact_event.save
 
