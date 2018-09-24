@@ -26,7 +26,9 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     @contact_event = AffairsContacts.new(contact_id: @contact.id, affair_id: params[:affair_id])
+    @contact_event.save
 
+    
     respond_to do |format|
       if @contact.save
         format.html { redirect_to @contact, notice: 'Contact was successfully created.' }

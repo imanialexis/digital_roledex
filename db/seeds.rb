@@ -39,7 +39,7 @@
 #     website: 'freecodecamp.org/',
 #     date: Time.now,
 #     description: 'Milestones or; blended value green space co-creation design thinking thought partnership B-corp. Accessibility social return on investment; sustainable fairness best practices natural resources. Agile; design thinking rubric; problem-solvers thought provoking co-create. Data thought partnership game-changer grit empower move the needle empower. Impact then, incubator collaborate resist problem-solvers. ',
-#         user_id: 1
+#     user_id: 1
 # )
 
 # Affair.create(

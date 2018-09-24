@@ -16,22 +16,22 @@
  @import "bootstrap";
 
  body {
-    background-color: #fff;
+    background-color: #D5D5D5
     }
  /* ***************** USER HOMEPAGE STYLING ********************** */
 
  #contacts-box {
-    background-color: green;
+    background-color: #868e96;
     width: 300px;
-    border: 25px solid green;
+    border: 25px solid #868e96;
     padding: 25px;
     margin: 25px;
 }
 
 #events-box {
-    background-color: blue;
+    background-color: #17a2b8;
     width: 300px;
-    border: 25px solid blue;
+    border: 25px solid #17a2b8;
     padding: 25px;
     margin: 25px;
 }
@@ -51,4 +51,30 @@
     display: flex;
     justify-content: space-evenly;
 }
+ 
 
+
+// ****************** NAV BAR *********************
+
+                
+// .view {
+//     background: url("/assets/background.jpg")no-repeat center center;
+// }
+// <img src="..." class="img-fluid" alt="Responsive image">
+
+.navbar {
+    background-color: #01395E;
+}
+
+
+
+.top-nav-collapse {
+    // background-color: rgba(0,0,255,0.3);
+    background-color: transparent
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #01395E;
+    }
+}
