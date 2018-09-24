@@ -34,9 +34,8 @@
 <br>
 <br>
 Contacts Made :
+<% @contacts.each do |contact| %>
 
-<% @events.each do | event | %>
-
-<%= event.name %>
+<a href = "/contacts/<%=contact.contact_id%>"> <%= contact.contact.fname%> <%= contact.contact.lname%> </a>
 
 <% end %>

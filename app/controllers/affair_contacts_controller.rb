@@ -1,0 +1,2 @@
+class AffairContactsController < ApplicationController
+end

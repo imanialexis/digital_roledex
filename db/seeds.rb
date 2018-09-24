@@ -47,5 +47,6 @@
 #     location: 'New York',
 #     website: 'webuildblack.com',
 #     date: Time.now,
-#     description: 'The ideate, corporate social responsibility mass incarceration sustainable collaborate social impact social return on investment. B-corp, social innovation human-centered activate, then innovate. Deep dive activate inclusion save the world transparent collaborative cities empower communities her body her rights. Blended value ideate synergy; then shine triple bottom line. Correlation strengthening infrastructure, framework, communities program areas activate external partners '
+#     description: 'The ideate, corporate social responsibility mass incarceration sustainable collaborate social impact social return on investment. B-corp, social innovation human-centered activate, then innovate. Deep dive activate inclusion save the world transparent collaborative cities empower communities her body her rights. Blended value ideate synergy; then shine triple bottom line. Correlation strengthening infrastructure, framework, communities program areas activate external partners ',
+# user_id: 1
 # )
