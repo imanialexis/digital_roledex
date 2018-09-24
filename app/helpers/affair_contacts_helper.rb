@@ -1,0 +1,2 @@
+module AffairContactsHelper
+end

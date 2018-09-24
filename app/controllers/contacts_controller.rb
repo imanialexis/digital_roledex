@@ -24,8 +24,10 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
+   
+   
     @contact = Contact.new(contact_params)
-    @contact_event = AffairsContacts.new(contact_id: @contact.id, affair_id: params[:affair_id])
+    @contact_event = Affair_Contacts.new(contact_id: @contact.id, affair_id: params[:affair_id])
     @contact_event.save
 
     
