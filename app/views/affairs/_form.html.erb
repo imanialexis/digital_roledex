@@ -42,6 +42,12 @@
       <%= form.text_area :description,   class: 'form-control form-control-lg',:cols => 10, :rows => 5 %>
     </div>
 
+     <div class="field">
+      <%= form.hidden_field :user_id , value: current_user.id %>
+      
+    </div>
+
+
     <div class="field form-group col-sm-6 row justify-content-center">
       <%= form.submit class: "btn btn-outline-primary" %>
     </div>

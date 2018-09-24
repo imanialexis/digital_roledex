@@ -72,6 +72,6 @@ class AffairsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def affair_params
-      params.require(:affair).permit(:name, :location, :website, :date, :description)
+      params.require(:affair).permit(:name, :location, :website, :date, :description, :user_id)
     end
 end
