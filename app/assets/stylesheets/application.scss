@@ -18,6 +18,10 @@
  body {
     background-color: #D5D5D5
     }
+
+main {
+    margin-top: 60px
+}
  /* ***************** USER HOMEPAGE STYLING ********************** */
 
  #contacts-box {
@@ -45,6 +49,8 @@
 #user_info_container {
     display: flex;
     justify-content: center;
+    // margin-top: 10px;
+
 }
 
 #button-container {
@@ -64,6 +70,7 @@
 
 .navbar {
     background-color: #01395E;
+    margin-bottom: 20px;
 }
 
 
@@ -77,4 +84,17 @@
     .navbar {
         background-color: #01395E;
     }
+}
+
+
+// ***************** PAGE STYLING *****************
+
+h1,thead {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+td {
+    font-family: 'Montserrat', sans-serif;
+
 }
