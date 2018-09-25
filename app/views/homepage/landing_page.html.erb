@@ -1,10 +1,14 @@
-<h1>K.I.T <i>the digital roledex </i></h1>
+<h1>K.I.T,<i>the digital roledex </i></h1>
 
-<p>Keep in touch with the people you meet!</p>
+<p>Keep in touch with the people you meet!</ >
+<h3>How it Works ?</h3>
+<p class= "landing-page-text"> Going to conferences, meetups, seminars, webinars etc is only as good as the information you can retain and leverage for immediate or future use. The founders at K.I.T made this app just for you so you can have a place aside from the complexities of LinkedIn to manage your contacts.</p> 
+<h3>What makes us different?</h3>
+<p class= "landing-page-text"> Less is more. We stayed away from all the bells and whistles that the 'big guys' have to make it easier for you to see the information that matters to you.</p>
     
     <% if current_user %>
         <%= link_to 'Sign out' , destroy_user_session_path, method: :delete %>
     <% else %>
-        <a href="/users/sign_in" class="nav-link">Log In</a>
-        <a href="/users/sign_up" class="nav-link">Sign Up</a>
+       <button type="button" class="btn btn-light"> <a href="/users/sign_in" class="nav-link ">Log In</a></button>
+        <button type="button" class="btn btn-light"><a href="/users/sign_up" class="nav-link ">Sign Up</a></button>
 <% end %>
