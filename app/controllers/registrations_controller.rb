@@ -16,12 +16,12 @@ end
     private
 
     def sign_up_params
-      params.require(:user).permit(:email,:password, :password_confirmation, :fname, :lname, :location, :title, :avatar)
+      params.require(:user).permit(:email,:password, :password_confirmation, :fname, :lname, :location, :title)
       
     end
   
     def account_update_params
-      params.require(:user).permit(:email,:password, :password_confirmation,:current_password, :fname, :lname, :location, :title, :avatar)
+      params.require(:user).permit(:email,:password, :password_confirmation,:current_password, :fname, :lname, :location, :title)
     end
 
 
