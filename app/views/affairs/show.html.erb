@@ -1,29 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @affair.name %>
-</p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @affair.location %>
-</p>
+<div class="card">
+  <div class="card-header">
+   <h1>  <%= @affair.name %> </h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> <strong>Date:</strong> <%= @affair.date.strftime("%B %d, %Y") %> |   <strong>Location:</strong><%= @affair.location %>
+ </h5>
+  <p class="card-text"><strong>Website:</strong><a href ='<%= @affair.website %>'> <%=@affair.website%> </a></p>
+  <p class="card-text"><strong>Description:</strong><%= @affair.description %></p>
 
-<p>
-  <strong>Website:</strong>
-  <a href ='<%= @affair.website %>'> <%=@affair.website%> </a>
-</p>
+  </div>
+</div>
 
-<p>
-  <strong>Date:</strong>
-  <%= @affair.date %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @affair.description %>
-</p>
+
+
+
+
+
+
 
 
 
@@ -33,9 +30,14 @@
 
 <br>
 <br>
-Contacts Made :
-<% @contacts.each do |contact| %>
 
-<a href = "/contacts/<%=contact.contact_id%>"> <%= contact.contact.fname%> <%= contact.contact.lname%> </a>
-
-<% end %>
+<div class="card">
+  <div class="card-header">
+    <h1>Contacts Made </h1>
+  </div>
+    <% @contacts.each do |contact| %>
+    <p class="card-text"><a href = "/contacts/<%=contact.contact_id%>"> <%= contact.contact.fname%> <%= contact.contact.lname%> </a></p>
+   <% end %>
+  </div>
+ 
+</div>
