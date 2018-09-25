@@ -1,19 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First Name:</strong>
-  <%= @contact.fname %>
-</p>
 
-<p>
-  <strong>Last Name:</strong>
-  <%= @contact.lname %>
-</p>
+<div class="card">
+  <div class="card-header">
+<h1><%= @contact.fname %> <%= @contact.lname %></h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">
+      <a href="mailto:<%= @contact.email %>"><%= @contact.email %></a> | <a href="tel:<%= @contact.phone %> "><%= @contact.phone %></a>
+    </h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+ 
+  </div>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @contact.email %>
-</p>
+
+
+
+
+
+
+
+
+
 
 <p>
   <strong>Title:</strong>
@@ -35,10 +44,6 @@
   <%= @contact.location %>
 </p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @contact.phone %>
-</p>
 
 <p>
   <strong>Website:</strong>
