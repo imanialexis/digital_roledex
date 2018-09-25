@@ -17,6 +17,8 @@
 
  body {
     background-color: #D5D5D5
+    // #D5D5D5
+    // #A0A0A0
     }
 
 main {
@@ -24,25 +26,28 @@ main {
 }
  /* ***************** USER HOMEPAGE STYLING ********************** */
 
- #contacts-box {
-    background-color: #868e96;
-    width: 300px;
-    border: 25px solid #868e96;
-    padding: 25px;
-    margin: 25px;
-}
+//  #contacts-box {
+//     background-color: #868e96;
+//     width: 300px;
+//     border: 25px solid #868e96;
+//     padding: 25px;
+//     margin: 25px;
+// }
 
-#events-box {
-    background-color: #17a2b8;
-    width: 300px;
-    border: 25px solid #17a2b8;
-    padding: 25px;
-    margin: 25px;
-}
+// #events-box {
+//     background-color: #01395E;
+//     width: 300px;
+//     border: 25px solid #01395E;
+//     opacity: .8;
+//     padding: 25px;
+//     margin: 25px;
+// }
 
 #events_contacts_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap
 
 }
 
@@ -56,6 +61,8 @@ main {
 #button-container {
     display: flex;
     justify-content: space-evenly;
+
+    
 }
  
 
@@ -91,6 +98,7 @@ main {
 
 h1,thead {
     font-family: 'Raleway', sans-serif;
+    color: #01395E;
 
 }
 
@@ -110,5 +118,6 @@ nav ul {
 
 p {
     font-family:'Montserrat', sans-serif;
-    font-size: 1em
+    font-size: 1em;
+    color:#357caa;
 }
