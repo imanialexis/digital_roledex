@@ -1,6 +1,5 @@
 class AffairsController < ApplicationController
-  before_action :set_affair, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /affairs
   # GET /affairs.json
   def index

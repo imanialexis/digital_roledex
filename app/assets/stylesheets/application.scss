@@ -29,7 +29,7 @@ main {
 
 #events_contacts_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 30px;
     flex-wrap: wrap
 
@@ -106,9 +106,8 @@ a {
 }
 
 // ************** LANDING PAGE ****************
-.text-center {
-    width: 50%;
-
+.landing-text {
+width: 50%;
 margin: auto;
 margin-top: 30px;
 }
