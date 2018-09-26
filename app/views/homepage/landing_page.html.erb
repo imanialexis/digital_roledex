@@ -11,6 +11,8 @@
     <% else %>
        <button type="button" class="btn btn-light"> <a href="/users/sign_in" class="nav-link ">Log In</a></button>
         <button type="button" class="btn btn-light"><a href="/users/sign_up" class="nav-link ">Sign Up</a></button>
-       <button type="button" class="btn btn-light"> <%= link_to "Sign in with Linkedin", user_linkedin_omniauth_authorize_path %></button>
+        <br>
+        <br>
+       <div><button type="button" class="btn btn-light"> <%= link_to "Sign in with Linkedin", user_linkedin_omniauth_authorize_path %></button></div>
     <% end %>
 
