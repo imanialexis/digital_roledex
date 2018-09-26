@@ -1,5 +1,6 @@
 class AffairsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user! ,:set_contact
+
   # GET /affairs
   # GET /affairs.json
   def index

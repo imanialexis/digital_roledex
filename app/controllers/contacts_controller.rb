@@ -1,5 +1,7 @@
 class ContactsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user! ,:set_contact
+  # before_action :set_contact, only: [:show, :edit, :update, :destroy]
+
 
   # GET /contacts
   # GET /contacts.json
