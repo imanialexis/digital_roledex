@@ -4,7 +4,7 @@ class AffairsController < ApplicationController
   # GET /affairs
   # GET /affairs.json
   def index
-    @affairs = Affair.all
+    @affairs = Affair.where(user_id: current_user.id)
   end
 
   # GET /affairs/1

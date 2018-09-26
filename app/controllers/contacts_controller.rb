@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.all
+    @contacts = current_user.contacts
   end
 
   # GET /contacts/1
@@ -80,7 +80,7 @@ class ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
-      params.require(:contact).permit(:fname, :lname, :email, :title, :pro_designation, :company, :location ,:phone, :website, :linked_in, :facebook, :twitter, :other_social, :highlights, :notes, :avatar, :user_id)
+      params.require(:contact).permit(:fname, :lname, :email, :title, :pro_designation, :company, :location ,:phone, :website, :linked_in, :facebook, :twitter, :other_social,  :notes, :avatar, :user_id)
     end
 
 end
