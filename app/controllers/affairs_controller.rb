@@ -1,5 +1,5 @@
 class AffairsController < ApplicationController
-  before_action :authenticate_user! ,:set_contact
+  before_action :authenticate_user! ,:set_affair, only: [:show, :edit, :update, :destroy]
 
   # GET /affairs
   # GET /affairs.json

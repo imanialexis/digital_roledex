@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  before_action :authenticate_user! ,:set_contact
+  before_action :authenticate_user! ,:set_contact, only: [:show, :edit, :update, :destroy]
   # before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
 
