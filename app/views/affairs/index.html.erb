@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Events</h1>
 
@@ -22,7 +21,7 @@
         <td><%= affair.name %></td>
         <td><%= affair.location %></td>
         <td><%= affair.website %></td>
-        <td><%= affair.date %></td>
+        <td><%= affair.date.strftime("%B %d, %Y") %></td>
         <td><%= affair.description %></td>
         <td><%= link_to 'Show', affair %></td>
         <td><%= link_to 'Edit', edit_affair_path(affair) %></td>

@@ -29,7 +29,7 @@ main {
 
 #events_contacts_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 30px;
     flex-wrap: wrap
 
@@ -123,6 +123,7 @@ h3 {
     color:#357caa;
 }
 
+// *** Sign Up Form ***
 .new_user{
 display: flex;
 flex-direction: column;

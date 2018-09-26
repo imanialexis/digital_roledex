@@ -9,6 +9,7 @@ class AffairsController < ApplicationController
   # GET /affairs/1
   # GET /affairs/1.json
   def show
+    @affair = Affair.find(params[:id])
 
     @contacts = AffairContact.where(affair_id: params[:id])
     
@@ -21,7 +22,9 @@ class AffairsController < ApplicationController
 
   # GET /affairs/1/edit
   def edit
+    @affair = Affair.find(params[:id])
   end
+
 
   # POST /affairs
   # POST /affairs.json
