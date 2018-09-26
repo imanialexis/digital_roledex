@@ -2,27 +2,26 @@ class RegistrationsController < Devise::RegistrationsController
 
   def after_sign_in_path_for(resource)
     # flash[:notice] = "Account succesfully updated"
-    # profile_path
-    redirect_to '/profile'
+    profile_path
+  
 end
 
 protected
 
 def after_update_path_for(resource)
-  # user_path(resource)
-  redirect_to '/profile'
+  profile_path
 
 end
     
     private
 
     def sign_up_params
-      params.require(:user).permit(:email,:password, :password_confirmation, :fname, :lname, :location, :title, :avatar)
+      params.require(:user).permit(:email,:password, :password_confirmation, :fname, :lname, :location, :title)
       
     end
   
     def account_update_params
-      params.require(:user).permit(:email,:password, :password_confirmation,:current_password, :fname, :lname, :location, :title, :avatar)
+      params.require(:user).permit(:email,:password, :password_confirmation,:current_password, :fname, :lname, :location, :title)
     end
 
 

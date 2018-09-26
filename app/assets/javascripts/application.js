@@ -20,6 +20,7 @@
 //= require popper
 //= require bootstrap-sprockets
 
-$(document).ready( function () {
-    $('#table_id').DataTable();
-} );
+
+$(document).on('turbolinks:load', function(){
+    $('#table_id').DataTable()
+});

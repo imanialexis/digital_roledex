@@ -1,8 +1,7 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Events</h1>
 
-<table id ="table_id" class ="display">
+<table id ="table_id" class ="display mini-table" data-turbolinks="false">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -22,7 +21,7 @@
         <td><%= affair.name %></td>
         <td><%= affair.location %></td>
         <td><%= affair.website %></td>
-        <td><%= affair.date %></td>
+        <td><%= affair.date.strftime("%B %d, %Y") %></td>
         <td><%= affair.description %></td>
         <td><%= link_to 'Show', affair %></td>
         <td><%= link_to 'Edit', edit_affair_path(affair) %></td>
@@ -34,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Event', new_affair_path , class: "btn btn-outline-primary" %>
+<%= link_to 'New Event', new_affair_path , class: "btn btn-light" %>

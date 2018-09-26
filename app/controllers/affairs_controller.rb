@@ -1,5 +1,5 @@
 class AffairsController < ApplicationController
-  before_action :set_affair, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user! ,:set_affair, only: [:show, :edit, :update, :destroy]
 
   # GET /affairs
   # GET /affairs.json
@@ -10,6 +10,7 @@ class AffairsController < ApplicationController
   # GET /affairs/1
   # GET /affairs/1.json
   def show
+    @affair = Affair.find(params[:id])
 
     @contacts = AffairContact.where(affair_id: params[:id])
     
@@ -22,7 +23,9 @@ class AffairsController < ApplicationController
 
   # GET /affairs/1/edit
   def edit
+    @affair = Affair.find(params[:id])
   end
+
 
   # POST /affairs
   # POST /affairs.json

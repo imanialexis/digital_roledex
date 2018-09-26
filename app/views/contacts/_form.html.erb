@@ -12,7 +12,7 @@
   <% end %>
 
  <div class = 'container '>
-    <div class="form-row field form-group col-sm-12"><h1>New Contact</h1></div>
+   
     
      <div class="field field form-group col-md-12">
       <%= form.label 'Where did you meet?' %>
@@ -126,8 +126,8 @@
       <%= form.hidden_field :user_id , value: current_user.id %>
     </div>
 
-    <div class="field form-group col-sm-6 ">
-      <%= form.submit class: "btn btn-outline-primary"%>
+    <div class="field  ">
+      <%= form.submit class: "btn btn-light"%>
     </div>
   <% end %>
 </div>
