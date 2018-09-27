@@ -9,6 +9,9 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'omniauth'
 gem 'omniauth-linkedin-oauth2'
+#added because of redirect error
+gem 'omniauth-oauth2', '~> 1.3.1'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
