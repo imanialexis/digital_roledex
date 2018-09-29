@@ -23,9 +23,9 @@
         <td><%= affair.website %></td>
         <td><%= affair.date.strftime("%B %d, %Y") %></td>
         <td><%= affair.description %></td>
-        <td><%= link_to 'Show', affair %></td>
+        <td><%= link_to 'View', affair %></td>
         <td><%= link_to 'Edit', edit_affair_path(affair) %></td>
-        <td><%= link_to 'Destroy', affair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', affair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
