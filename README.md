@@ -17,15 +17,15 @@
 ## Built With
 * Ruby version 2.5.1
 * Ruby on Rails version 5.2.1
+* OAUTH 2.0
+* OMNIAUTH-LINKEDIN
 * Bootstrap
 * jQuery
 * Devise
-* OAUTH 2.0
-* OMNIAUTH-LINKEDIN
 
 ## Feautures
-* Devise for user autherntication
 * Omni-auth 2.0 LinkedIn for user to sign in with LinkedIn
+* Devise for user autherntication
 
 
 ## Functionality
