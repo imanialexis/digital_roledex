@@ -13,3 +13,21 @@
 <img width="1440" alt="contacts" src="https://user-images.githubusercontent.com/33199892/46250709-618cbe00-c40e-11e8-9603-7581024bb333.png">
 
 <img width="1430" alt="event" src="https://user-images.githubusercontent.com/33199892/46250712-6ea9ad00-c40e-11e8-819c-ecd2d60827b1.png">
+
+## Built With
+* Ruby version 2.5.1
+* Ruby on Rails version 5.2.1
+* Bootstrap
+* jQuery
+* Devise
+* OAUTH 2.0
+* OMNIAUTH-LINKEDIN
+
+## Feautures
+* Devise for user autherntication
+* Omni-auth 2.0 LinkedIn for user to sign in with LinkedIn
+
+
+## Functionality
+* User can create an event, then add contacts associated to that event with information such as the contacts LinkedIn, phone number, email and notes. 
+* User can view an event and all assoicated contacts met at that event.
