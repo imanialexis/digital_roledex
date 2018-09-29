@@ -22,6 +22,7 @@
 * Bootstrap
 * jQuery
 * Devise
+* PostrgreSQL
 
 ## Feautures
 * Omni-auth 2.0 LinkedIn for user to sign in with LinkedIn
