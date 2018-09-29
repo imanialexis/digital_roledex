@@ -8,7 +8,10 @@ gem 'devise'
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'omniauth'
+#added because strategy was not found
+gem 'omniauth-linkedin'
 # gem 'omniauth-linkedin-oauth2'
+
 #added because of redirect error
 gem 'omniauth-oauth2', '~> 1.3.1'
 

@@ -6,17 +6,17 @@
   </div>
   <div class="card-body">
     <h5 class="card-title">
-      <a href="mailto:<%= @contact.email %>"><%= @contact.email %></a> | <a href="tel:<%= @contact.phone %> "><%= @contact.phone %></a>
+      Email: <a href="mailto:<%= @contact.email %>"><%= @contact.email %></a> | Phone :<a href="tel:<%= @contact.phone %> "><%= @contact.phone %></a>
     </h5>
-    <p class="card-text"><strong>Title:</strong> <%= @contact.title %></p>
-    <p class="card-text"><strong>Profesional Designation:</strong> <%= @contact.pro_designation %></p>
-    <p class="card-text"> <strong>Company:</strong> <%= @contact.company %></p>
-    <p class="card-text">  <strong>Location:</strong><%= @contact.location %></p>
-    <p class="card-text"><strong>Website:</strong> <%= @contact.website %></p>
-    <p class="card-text">  <strong>Linked in:</strong><%= @contact.linked_in %></p>
-    <p class="card-text"><strong>Facebook:</strong><%= @contact.facebook %></p>
-    <p class="card-text"> <strong>Twitter:</strong><%= @contact.twitter %></p>
-    <p class="card-text"><strong>Other Social:</strong><%= @contact.other_social %></p>
+    <p class="card-text"><strong>Title: </strong> <%= @contact.title %></p>
+    <p class="card-text"><strong>Profesional Designation: </strong> <%= @contact.pro_designation %></p>
+    <p class="card-text"> <strong>Company: </strong> <%= @contact.company %></p>
+    <p class="card-text">  <strong>Location: </strong><%= @contact.location %></p>
+    <p class="card-text"><strong>Website: </strong> <%= @contact.website %></p>
+    <p class="card-text">  <strong>Linked in: </strong><a href ="<%= @contact.linked_in %>"> <%= @contact.linked_in %></p>
+    <p class="card-text"><strong>Facebook: </strong><%= @contact.facebook %></p>
+    <p class="card-text"> <strong>Twitter: </strong><%= @contact.twitter %></p>
+    <p class="card-text"><strong>Other Social: </strong><%= @contact.other_social %></p>
     <p class="card-text"></p>
 
   </div>
