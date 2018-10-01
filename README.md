@@ -34,3 +34,4 @@
 * User can create an event, then add contacts associated to that event with information such as the contacts LinkedIn, phone number, email and notes. 
 * User can view an event and all assoicated contacts met at that event.
 * Mobile responsive
+* Datatables for both contacts and events include search and filter options
