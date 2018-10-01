@@ -1,5 +1,5 @@
 ## Description
-### A mobile friendly app that allows users to keep track of the people they meet and where with associated information
+### A mobile responsive fullstack app that allows users to keep track of the people they meet and where with associated information
 
 ## Demo
 ### username: asimone@gmail.com
@@ -32,3 +32,4 @@
 ## Functionality
 * User can create an event, then add contacts associated to that event with information such as the contacts LinkedIn, phone number, email and notes. 
 * User can view an event and all assoicated contacts met at that event.
+* Mobile responsive
