@@ -22,7 +22,7 @@
 * Bootstrap
 * jQuery
 * Devise
-* PostrgreSQL
+* Postrgres
 * Datatables
 
 ## Feautures
