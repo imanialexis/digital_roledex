@@ -2,7 +2,8 @@
 ### A mobile responsive fullstack app that allows users to keep track of the people they meet and where with associated information
 
 ## Demo
-**username: asimone@gmail.com | password: password **
+#### username: asimone@gmail.com 
+#### password: password 
 
 <img width="1426" alt="homepage" src="https://user-images.githubusercontent.com/33199892/46250721-94cf4d00-c40e-11e8-9778-4f44f005194d.png">
 
