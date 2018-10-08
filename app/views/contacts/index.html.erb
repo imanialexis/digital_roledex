@@ -25,8 +25,8 @@
         <td><%= contact.title %></td>
          <td><%= contact.company %></td>
         <td><%= contact.location %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.phone %></td>
+        <td><a href="mailto:<%= @contact.email %>"><%= @contact.email %></td>
+        <td><a href="tel:<%= @contact.phone %>"><%= @contact.phone %></td>
         <td><%= link_to 'View', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
         <td><%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
