@@ -24,3 +24,5 @@
 $(document).on('turbolinks:load', function(){
     $('#table_id').DataTable()
 });
+
+
